@@ -1,83 +1,146 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SwayamKaro - News & Information</title>
+  <title>SwayamKaro - News & Updates</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-  <header class="header">
-    <h1>SwayamKaro</h1>
-    <p>News • Information • Ads</p>
+  <!-- Top Header Section -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="#">Swayam<span>Karo</span></a>
+      </div>
+      
+      <div class="nav-right">
+        <div class="search-box">
+          <input type="text" placeholder="Search news...">
+          <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <button class="dark-mode-btn"><i class="fa-solid fa-moon"></i></button>
+      </div>
+    </div>
+
+    <!-- Category Menu Bar -->
+    <nav class="category-bar">
+      <a href="#" class="active">Home</a>
+      <a href="#">News</a>
+      <a href="#">Technology</a>
+      <a href="#">Education</a>
+      <a href="#">Government</a>
+      <a href="#">Contact</a>
+    </nav>
   </header>
 
-  <nav class="navbar">
-    <section class="top-bar">
-      <div class="search-box">
-        <input type="text" id="searchInput" placeholder="Search news...">
-        <button onclick="searchNews()">🔍</button>
-      </div>
-      <button id="darkModeBtn">🌙 Dark Mode</button>
-    </section>
-
-    <a href="#">Home</a>
-    <a href="#">News</a>
-    <a href="#">Technology</a>
-    <a href="#">Education</a>
-    <a href="#">Government</a>
-    <a href="#">Contact</a>
-  </nav>
-
-  <section class="hero">
-    <h2>Welcome to SwayamKaro</h2>
-    <p>Latest News, Government Updates, Technology, Education and Useful Information.</p>
-  </section>
-
-  <!-- Marquee container for CSS animation -->
-  <section class="featured-news">
-    <div class="featured-card">
-      <img src="https://picsum.photos/800/400" alt="Featured News">
-      <div class="featured-content">
-        <h2>Top Story of the Day</h2>
-        <p>Read the latest updates on technology, education, government schemes, jobs and more only on <b>SwayamKaro</b>.</p>
-        <a href="#">Read Full News -></a>
-      </div>
+  <!-- Breaking News Ticker -->
+  <div class="breaking-container">
+    <div class="breaking-title"><i class="fa-solid fa-fire"></i> Breaking News</div>
+    <div class="breaking-text">
+      Welcome to SwayamKaro | Latest Government Schemes Updates | Today's Top Tech & Education News
     </div>
-  </section>
-
-  <div class="breaking">
-    🔥 Breaking News: Welcome to SwayamKaro | Latest News | Government Jobs | Technology Updates | Education |
   </div>
 
-  <section class="news">
-    <div class="card">
-      <h3>Latest News</h3>
-      <p>Read today's latest news from India and around the world.</p>
+  <!-- Main Website Content Container -->
+  <div class="main-wrapper">
+    
+    <!-- Left Column: Top Story & News Grid -->
+    <div class="content-area">
+      
+      <!-- Professional Top Story / Hero Section -->
+      <section class="hero-card">
+        <div class="hero-image">
+          <img src="https://via.placeholder.com/600x350" alt="Top Story Image">
+        </div>
+        <div class="hero-content">
+          <span class="badge">Featured</span>
+          <h2>Top Story of the Day</h2>
+          <p>Read the latest updates on technology, education, government schemes, jobs, and more only on SwayamKaro.</p>
+          <a href="#" class="read-btn">Read Full Story <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </section>
+
+      <!-- Category Grid Sections -->
+      <h3 class="section-title">Latest Categories</h3>
+      <div class="news-grid">
+        
+        <div class="grid-card">
+          <div class="card-icon"><i class="fa-solid fa-newspaper"></i></div>
+          <h4>Latest News</h4>
+          <p>Read today's latest news from India and around the world with real-time updates.</p>
+          <a href="#">Explore News →</a>
+        </div>
+
+        <div class="grid-card">
+          <div class="card-icon"><i class="fa-solid fa-microchip"></i></div>
+          <h4>Technology</h4>
+          <p>Get smartphone reviews, AI tools, gadget news, and latest technology updates.</p>
+          <a href="#">Explore Tech →</a>
+        </div>
+
+        <div class="grid-card">
+          <div class="card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h4>Education</h4>
+          <p>Study notes, exam schedules, board results, and educational material.</p>
+          <a href="#">Explore Education →</a>
+        </div>
+
+        <div class="grid-card">
+          <div class="card-icon"><i class="fa-solid fa-landmark"></i></div>
+          <h4>Government Schemes</h4>
+          <p>Information and application details about central and state government schemes.</p>
+          <a href="#">Explore Schemes →</a>
+        </div>
+
+      </div>
+
     </div>
 
-    <div class="card">
-      <h3>Technology</h3>
-      <p>Get smartphone, AI, gadget and technology updates.</p>
-    </div>
+    <!-- Right Sidebar Column: Ads, Trending & Social Links -->
+    <aside class="sidebar">
+      
+      <!-- Advertisement Slot 1 -->
+      <div class="ad-box">
+        <span class="ad-tag">Advertisement</span>
+        <img src="https://via.placeholder.com/300x250?text=Your+Ad+Here" alt="Sidebar Ad">
+      </div>
 
-    <div class="card">
-      <h3>Education</h3>
-      <p>Notes, exams, results and study material.</p>
-    </div>
+      <!-- Trending News Section -->
+      <div class="widget">
+        <h3><i class="fa-solid fa-chart-line"></i> Trending Topics</h3>
+        <ul class="trending-list">
+          <li><a href="#">⚡ PM Awas Yojana 2026 List Updated</a></li>
+          <li><a href="#">⚡ AI Tools Every Student Must Use</a></li>
+          <li><a href="#">⚡ Today's Top Exam Notifications</a></li>
+        </ul>
+      </div>
 
-    <div class="card">
-      <h3>Government Schemes</h3>
-      <p>Information about central and state government schemes.</p>
-    </div>
-  </section>
+      <!-- Social Connect Section -->
+      <div class="widget">
+        <h3><i class="fa-solid fa-share-nodes"></i> Follow Us</h3>
+        <div class="social-grid">
+          <a href="#" class="soc-btn fb"><i class="fa-brands fa-facebook-f"></i> Facebook</a>
+          <a href="#" class="soc-btn tw"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+          <a href="#" class="soc-btn insta"><i class="fa-brands fa-instagram"></i> Instagram</a>
+          <a href="#" class="soc-btn yt"><i class="fa-brands fa-youtube"></i> YouTube</a>
+        </div>
+      </div>
 
+    </aside>
+
+  </div>
+
+  <!-- Professional Footer Section -->
   <footer>
-    &copy; 2026 SwayamKaro | All Rights Reserved
+    <div class="footer-container">
+      <p>© 2026 SwayamKaro | All Rights Reserved</p>
+    </div>
   </footer>
 
-  <!-- Script file add karna mat bhoolna -->
-  <script src="script.js"></script>
 </body>
 </html>
