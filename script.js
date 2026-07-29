@@ -1,10 +1,15 @@
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("Welcome to SwayamKaro");
+// Welcome Message
+console.log("Welcome to SwayamKaro");
 
-    const year = new Date().getFullYear();
-    const footerYear = document.getElementById("year");
+// Current Year in Footer
+const footer = document.querySelector("footer");
+if (footer) {
+  footer.innerHTML = `© ${new Date().getFullYear()} SwayamKaro | All Rights Reserved`;
+}
 
-    if (footerYear) {
-        footerYear.textContent = year;
-    }
+// News Cards Hover Effect
+document.querySelectorAll(".card").forEach(card => {
+  card.addEventListener("click", () => {
+    alert("This feature will be available soon!");
+  });
 });
