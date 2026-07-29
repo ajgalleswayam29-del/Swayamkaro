@@ -1,67 +1,73 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SwayamKaro - News & Information</title>
-
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SwayamKaro - News & Information</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header class="header">
+  <header class="header">
     <h1>SwayamKaro</h1>
     <p>News • Information • Ads</p>
-</header>
+  </header>
 
-<nav class="navbar">
+  <nav class="navbar">
+    <section class="top-bar">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search news...">
+        <button onclick="searchNews()">🔍</button>
+      </div>
+      <button id="darkModeBtn">🌙 Dark Mode</button>
+    </section>
+
     <a href="#">Home</a>
     <a href="#">News</a>
     <a href="#">Technology</a>
     <a href="#">Education</a>
     <a href="#">Government</a>
     <a href="#">Contact</a>
-</nav>
+  </nav>
 
-<section class="hero">
+  <section class="hero">
     <h2>Welcome to SwayamKaro</h2>
     <p>Latest News, Government Updates, Technology, Education and Useful Information.</p>
-</section>
+  </section>
 
-<marquee class="breaking">
-🔥 Breaking News: Welcome to SwayamKaro | Latest News | Government Jobs | Technology Updates | Education |
-</marquee>
+  <!-- Marquee container for CSS animation -->
+  <div class="breaking">
+    🔥 Breaking News: Welcome to SwayamKaro | Latest News | Government Jobs | Technology Updates | Education |
+  </div>
 
-<section class="news">
+  <section class="news">
+    <div class="card">
+      <h3>Latest News</h3>
+      <p>Read today's latest news from India and around the world.</p>
+    </div>
 
-<div class="card">
-<h3>Latest News</h3>
-<p>Read today's latest news from India and around the world.</p>
-</div>
+    <div class="card">
+      <h3>Technology</h3>
+      <p>Get smartphone, AI, gadget and technology updates.</p>
+    </div>
 
-<div class="card">
-<h3>Technology</h3>
-<p>Get smartphone, AI, gadget and technology updates.</p>
-</div>
+    <div class="card">
+      <h3>Education</h3>
+      <p>Notes, exams, results and study material.</p>
+    </div>
 
-<div class="card">
-<h3>Education</h3>
-<p>Notes, exams, results and study material.</p>
-</div>
+    <div class="card">
+      <h3>Government Schemes</h3>
+      <p>Information about central and state government schemes.</p>
+    </div>
+  </section>
 
-<div class="card">
-<h3>Government Schemes</h3>
-<p>Information about central and state government schemes.</p>
-</div>
+  <footer>
+    &copy; 2026 SwayamKaro | All Rights Reserved
+  </footer>
 
-</section>
-
-<footer>
-© 2026 SwayamKaro | All Rights Reserved
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
 </html>
